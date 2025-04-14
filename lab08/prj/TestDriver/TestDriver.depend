@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1744627647 source:c:\coding\81-1\lab8\prj\testdriver\main.cpp
+	<iostream>
+	<cmath>
+	"ModulesOleinikov.h"
+
+1744624435 c:\coding\81-1\lab8\prj\modulesoleinikov.h
+
+1744624435 c:\coding\81-1\lab8\prj\modulesoleinikov\modulesoleinikov.h
+
