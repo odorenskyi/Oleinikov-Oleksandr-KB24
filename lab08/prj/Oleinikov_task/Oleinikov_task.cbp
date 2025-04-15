@@ -2,21 +2,25 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="TestDriver" />
+		<Option title="Oleinikov_task" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/TestDriver" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/Oleinikov_task" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="M:/Programing/81_1111/prj" />
 				</Compiler>
+				<Linker>
+					<Add library="M:/Programing/81_1111/prj/ModulesOleinikov/bin/Debug/libModulesOleinikov.a" />
+				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/TestDriver" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/Oleinikov_task" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -31,11 +35,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="M:/Programing/81_1111/prj" />
 		</Compiler>
-		<Linker>
-			<Add library="M:/Programing/81_1111/prj/ModulesOleinikov/bin/Debug/libModulesOleinikov.a" />
-		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

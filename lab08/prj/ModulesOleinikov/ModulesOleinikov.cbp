@@ -16,7 +16,11 @@
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-g" />
+					<Add directory="M:/Programing/81_1111/prj/ModulesOleinikov" />
 				</Compiler>
+				<Linker>
+					<Add library="M:/Programing/81_1111/prj/ModulesOleinikov/bin/Debug/libModulesOleinikov.a" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/ModulesOleinikov" prefix_auto="1" extension_auto="1" />
@@ -34,8 +38,14 @@
 				</Linker>
 			</Target>
 		</Build>
-		<Unit filename="main.c">
-			<Option compilerVar="CC" />
+		<Compiler>
+			<Add directory="M:/Programing/81_1111/prj/ModulesOleinikov" />
+		</Compiler>
+		<Linker>
+			<Add library="M:/Programing/81_1111/prj/ModulesOleinikov/bin/Debug/libModulesOleinikov.a" />
+		</Linker>
+		<Unit filename="../ModulesOleinikov.h">
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="main.cpp">
 			<Option compilerVar="CC" />

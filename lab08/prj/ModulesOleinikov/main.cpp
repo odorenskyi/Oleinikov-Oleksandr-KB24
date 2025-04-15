@@ -1,11 +1,6 @@
-#include <cmath>
-#include "ModulesOleinikov.h"
+#include <math.h>
 
-double s_calculation(double x, double y, double z) {
-    double part1 = std::pow(y * z, std::fabs(x));       // (yz)^|x|
-    double part2 = y / M_PI;                            // y / π
-    double part3 = std::sqrt(std::fabs(x));             // sqrt(|x|)
 
-    double result = std::fabs(part1) - part2 - part3;   // |(yz)^|x|| - y/π - sqrt(|x|)
-    return result;
+double s_calculation (double x, double y, double z) {
+    return fabs (pow (y*z, fabs (x)) - y/ M_PI - sqrt(x)) ;
 }
